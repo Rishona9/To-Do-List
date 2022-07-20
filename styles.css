@@ -1,0 +1,78 @@
+body {
+  font-family: "Lato", sans-serif;
+  background: #d5e4ef;
+  line-height: 2;
+}
+.wrapper {
+  max-width: 1000px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #45529d;
+  color: white;
+  text-align: center;
+}
+.headline {
+  font-size: 40px;
+}
+.input-main {
+  width: 40%;
+  padding: 12px;
+  border: none;
+  margin-bottom: 35px;
+}
+.btn-main {
+  color: white;
+  padding: 12px;
+  font-size: 14px;
+  background-color: #2ca6d2;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-toggle {
+  background-color: #8188ae;
+  color: white;
+  font-size: 16px;
+  padding: 15px;
+  border: none;
+}
+.list-container {
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+ul {
+  list-style: none;
+  text-align: left;
+}
+li {
+  line-height: 3;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #dedede;
+}
+li:last-child {
+  border: none;
+}
+.btn-remove {
+  padding: 8px;
+  background-color: #d74a56;
+  color: white;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 720px) {
+  .wrapper {
+    max-width: 1000px;
+    width: 60%;
+  }
+  input {
+    width: 50%;
+  }
+}

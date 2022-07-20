@@ -5,23 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="headline">Today's To Do List</h1>
-        <input type="text" class="input-main" />
-        <button class="btn-main">Add Task</button>
-      </div>
+        <h1 class="headline">My Day</h1>
+        <div>
+          <input type="text" class="input-main" />
+          <button class="btn-main">Add Task</button>
+        </div>
       </header>
+
       <button class="btn-toggle">Hide List</button>
+
       <div class="list-container">
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <li>Stretch</li>
+          <li>Run 3 miles</li>
+          <li>Code</li>
+          <li>Read book</li>
         </ul>
         <button class="btn-remove">Remove Last Task</button>
       </div>
