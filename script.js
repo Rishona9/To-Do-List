@@ -3,9 +3,11 @@ const btnToggle = document.querySelector(".btn-toggle");
 const taskList = document.querySelector(".list-container ul");
 
 btnCreate.addEventListener("click", () => {
+  let ul = document.getElementsByTagName("ul")[0];
   const input = document.querySelector(".input-main");
-  const list = document.querySelector("ul");
-  list.insertAdjacentHTML("afterbegin", `<li>${input.value}</li>`);
+  let li = document.createElement("li");
+  li.textContent = input.value;
+  ul.appendChild(li);
   input.value = "";
 });
 
