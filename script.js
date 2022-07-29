@@ -10,7 +10,7 @@ function attachRemoveButton(li) {
   remove.textContent = "Remove";
   li.appendChild(remove);
 }
-for (i = 0; i < listItems.length; i++) {
+for (let i = 0; i < listItems.length; i++) {
   attachRemoveButton(listItems[i]);
 }
 
@@ -28,6 +28,7 @@ btnCreate.addEventListener("click", () => {
   let li = document.createElement("li");
   li.textContent = input.value;
   attachRemoveButton(li);
+
   ul.appendChild(li);
   input.value = "";
 });
